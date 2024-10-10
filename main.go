@@ -15,7 +15,7 @@ var firebaseApp *firebase.App
 
 func init() {
 	// Initialize the Firebase app with service account
-	opt := option.WithCredentialsFile("./dreamsleep-b26a1-firebase-adminsdk-5jzd2-2dee6d2dc9.json")
+	opt := option.WithCredentialsFile("path to the json file service account.json")
 	var err error
 	firebaseApp, err = firebase.NewApp(context.Background(), nil, opt)
 	if err != nil {
